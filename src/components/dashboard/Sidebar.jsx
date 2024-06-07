@@ -10,15 +10,18 @@ const Sidebar = () => {
             key={item.href}
             to={item.href}
             className={({ isActive }) =>
-              `px-4 py-3 ${
+              `px-6 py-3 ${
                 isActive
-                  ? "bg-brand-primary text-invert"
-                  : "hover:text-brand-primary"
+                  ? "bg-primary text-white"
+                  : "hover:text-primary hover:bg-primary-50"
               }`
             }
             end
           >
-            {item.label}
+            <div className="flex gap-4 items-center">
+              {<item.icon />}
+              {item.label}
+            </div>
           </NavLink>
         ))}
       </div>
