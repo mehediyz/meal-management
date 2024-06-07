@@ -22,3 +22,26 @@ export const individualStatsData = [
     icon: Receipt,
   },
 ];
+
+export const overallStatsData = [
+  {
+    title: "Meals Today",
+    value: "10 - 15 - 11",
+    icon: Users,
+  },
+  {
+    title: "Total Meals",
+    value: "200",
+    icon: Utensils,
+  },
+  {
+    title: "Deposit",
+    value: "10000 Tk",
+    icon: Wallet,
+  },
+  {
+    title: "Balance",
+    value: "4000 Tk",
+    icon: Receipt,
+  },
+];

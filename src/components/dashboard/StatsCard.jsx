@@ -6,7 +6,7 @@ const StatsCard = ({ data }) => {
         <span className="text-primary">{<data.icon />}</span>
         <div className="space-y-2">
           <h1 className="font-semibold text-grey-500">{title}</h1>
-          <p className="text-xl font-bold text-grey-600">{value}</p>
+          <p className="text-xl font-semibold text-grey-600">{value}</p>
         </div>
       </div>
     </div>

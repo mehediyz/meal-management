@@ -1,5 +1,6 @@
 import StatsCard from "@/components/dashboard/StatsCard";
-import { individualStatsData } from "@/constants/data";
+import Title from "@/components/dashboard/Title";
+import { individualStatsData, overallStatsData } from "@/constants/data";
 
 const Dashboard = () => {
   return (
@@ -12,6 +13,14 @@ const Dashboard = () => {
         {individualStatsData.map((item) => (
           <StatsCard key={item.title} data={item} />
         ))}
+      </div>
+      <div className="mt-4">
+        <Title title={"Members Stats"} />
+        <div className="grid grid-cols-4 gap-4">
+          {overallStatsData.map((item) => (
+            <StatsCard key={item.title} data={item} />
+          ))}
+        </div>
       </div>
     </div>
   );
