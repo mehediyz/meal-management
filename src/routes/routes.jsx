@@ -6,7 +6,7 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 import Deposits from "../pages/Dashboard/Deposits/Deposits";
 import Expense from "../pages/Dashboard/Expense/Expense";
 import Members from "../pages/Dashboard/Members/Members";
-import MyMeals from "../pages/Dashboard/MyMeals/MyMeals";
+import ManageMeals from "../pages/Dashboard/ManageMeals/ManageMeals";
 import Home from "../pages/Home/Home";
 import { createBrowserRouter } from "react-router-dom";
 
@@ -30,8 +30,8 @@ export const routes = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "/dashboard/my-meals",
-        element: <MyMeals />,
+        path: "/dashboard/manage-meals",
+        element: <ManageMeals />,
       },
       {
         path: "/dashboard/deposits",

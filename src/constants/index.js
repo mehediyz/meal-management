@@ -10,7 +10,7 @@ import {
 
 export const dashboardNavLinks = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/dashboard/my-meals", label: "My Meals", icon: Utensils },
+  { href: "/dashboard/manage-meals", label: "Manage Meals", icon: Utensils },
   { href: "/dashboard/deposits", label: "Deposits", icon: Wallet },
   { href: "/dashboard/expense", label: "Expense", icon: Receipt },
   { href: "/dashboard/bazar-list", label: "Bazar List", icon: ShoppingBasket },
