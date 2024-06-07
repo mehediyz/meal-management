@@ -1,4 +1,5 @@
 import StatsCard from "@/components/dashboard/StatsCard";
+import { MembersMealTable } from "@/components/dashboard/MembersMealTable";
 import Title from "@/components/dashboard/Title";
 import { individualStatsData, overallStatsData } from "@/constants/data";
 
@@ -21,6 +22,9 @@ const Dashboard = () => {
             <StatsCard key={item.title} data={item} />
           ))}
         </div>
+      </div>
+      <div className="mt-4">
+        <MembersMealTable />
       </div>
     </div>
   );
