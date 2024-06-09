@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Hero = () => {
   const navigate = useNavigate();
   return (
-    <header className="bg-primary-50 py-20">
+    <header className="bg-primary-50 py-32">
       <div className="container mx-auto flex gap-12 items-center justify-between">
         <div className="space-y-6">
           <h1 className="text-6xl leading-tight">
