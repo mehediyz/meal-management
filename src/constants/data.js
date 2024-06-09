@@ -1,4 +1,13 @@
-import { Receipt, Users, Utensils, Wallet } from "lucide-react";
+import {
+  LayoutDashboard,
+  Receipt,
+  ShoppingBasket,
+  SquareKanban,
+  User,
+  Users,
+  Utensils,
+  Wallet,
+} from "lucide-react";
 
 export const individualStatsData = [
   {
@@ -43,5 +52,49 @@ export const overallStatsData = [
     title: "Balance",
     value: "4000 Tk",
     icon: Receipt,
+  },
+];
+
+// Features
+export const featuresData = [
+  {
+    icon: LayoutDashboard,
+    title: "Dashboard",
+    description: "Overview of Meals",
+  },
+  {
+    icon: User,
+    title: "Member Profile",
+    description: "Profile for mess members",
+  },
+  {
+    icon: Users,
+    title: "Manage Members",
+    description: "Add, edit, delete mess members",
+  },
+  {
+    icon: Utensils,
+    title: "Manage Meals",
+    description: "Update meals",
+  },
+  {
+    icon: Wallet,
+    title: "Deposits",
+    description: "Manage deposits",
+  },
+  {
+    icon: Receipt,
+    title: "Expenses",
+    description: "Record every expenses",
+  },
+  {
+    icon: ShoppingBasket,
+    title: "Bazar List",
+    description: "Record of Bazar List",
+  },
+  {
+    icon: SquareKanban,
+    title: "Summary",
+    description: "Final report of the month",
   },
 ];
