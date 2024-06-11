@@ -1,5 +1,6 @@
 import {
   LayoutDashboard,
+  LogIn,
   Receipt,
   ShoppingBasket,
   SquareKanban,
@@ -96,5 +97,27 @@ export const featuresData = [
     icon: SquareKanban,
     title: "Summary",
     description: "Final report of the month",
+  },
+];
+
+//
+export const getStartedData = [
+  {
+    icon: LogIn,
+    step: 1,
+    title: "Sign Up",
+    description: "Create your free account",
+  },
+  {
+    icon: Users,
+    step: 2,
+    title: "Add Members",
+    description: "Add your mess members",
+  },
+  {
+    icon: Utensils,
+    step: 3,
+    title: "Start Managing!",
+    description: "Explore all the features",
   },
 ];
