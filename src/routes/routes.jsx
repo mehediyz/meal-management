@@ -13,6 +13,7 @@ import Signup from "@/pages/Signup/Signup";
 import Login from "@/pages/Login/Login";
 import Blog from "@/pages/Blog/Blog";
 import BlogLayout from "@/layouts/BlogLayout";
+import DynamicBlogPage from "@/pages/Blog/DynamicBlogPage";
 
 export const routes = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const routes = createBrowserRouter([
           {
             path: "/blog",
             element: <Blog />,
+          },
+          {
+            path: "/blog/:id",
+            element: <DynamicBlogPage />,
           },
         ],
       },
