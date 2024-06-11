@@ -24,19 +24,19 @@ export const routes = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+    ],
+  },
+  {
+    path: "/blog",
+    element: <BlogLayout />,
+    children: [
       {
         path: "/blog",
-        element: <BlogLayout />,
-        children: [
-          {
-            path: "/blog",
-            element: <Blog />,
-          },
-          {
-            path: "/blog/:id",
-            element: <DynamicBlogPage />,
-          },
-        ],
+        element: <Blog />,
+      },
+      {
+        path: "/blog/:id",
+        element: <DynamicBlogPage />,
       },
     ],
   },

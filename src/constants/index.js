@@ -17,10 +17,3 @@ export const dashboardNavLinks = [
   { href: "/dashboard/members", label: "Members", icon: Users },
   { href: "/dashboard/profile", label: "My Profile", icon: User },
 ];
-
-export const homeNavLinks = [
-  { href: "/", label: "Home" },
-  { href: "#features", label: "Features" },
-  { href: "#contact", label: "Contact" },
-  { href: "/blog", label: "Blog" },
-];
