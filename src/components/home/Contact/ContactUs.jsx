@@ -4,7 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 const ContactUs = () => {
   return (
-    <div className="bg-primary-50 py-32">
+    <div id="contact" className="bg-primary-50 py-32">
       <div className="container mx-auto">
         <h1 className="text-center text-5xl">
           Contact <span className="text-primary">Us</span>

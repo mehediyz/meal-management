@@ -1,7 +1,6 @@
 import { UtensilsCrossed } from "lucide-react";
 import { Button } from "../ui/button";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { homeNavLinks } from "@/constants";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -16,14 +15,33 @@ const Navbar = () => {
             <UtensilsCrossed /> Meals
           </Link>
           <div className="flex gap-6 items-center">
-            {homeNavLinks.map((item) => (
-              <NavLink
-                className="hover:text-primary font-semibold"
-                to={item.href}
-              >
-                {item.label}
-              </NavLink>
-            ))}
+            <NavLink
+              className={({ isActive }) =>
+                `${
+                  isActive ? "text-primary" : "hover:text-primary"
+                } font-semibold`
+              }
+              to={"/"}
+            >
+              Home
+            </NavLink>
+
+            <a className="hover:text-primary font-semibold" href={"/#features"}>
+              Features
+            </a>
+            <a className="hover:text-primary font-semibold" href={"/#contact"}>
+              Contact
+            </a>
+            <NavLink
+              className={({ isActive }) =>
+                `${
+                  isActive ? "text-primary" : "hover:text-primary"
+                } font-semibold`
+              }
+              to={"/blog"}
+            >
+              Blog
+            </NavLink>
           </div>
           <Button onClick={() => navigate("/login")}>Login</Button>
         </div>
