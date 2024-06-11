@@ -3,7 +3,7 @@ import BlogCard from "./BlogCard";
 
 const RecentBlog = () => {
   return (
-    <div className="container mx-auto py-24">
+    <div className="container mx-auto py-32">
       <div>
         <h1 className="text-center text-5xl">
           Our <span className="text-primary">Blog</span>

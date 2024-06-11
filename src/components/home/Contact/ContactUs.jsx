@@ -4,7 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 const ContactUs = () => {
   return (
-    <div className="bg-primary-50 py-24">
+    <div className="bg-primary-50 py-32">
       <div className="container mx-auto">
         <h1 className="text-center text-5xl">
           Contact <span className="text-primary">Us</span>
@@ -13,7 +13,7 @@ const ContactUs = () => {
           Have a question? Feel free to ask.
         </p>
 
-        <div className="py-12 max-w-[800px] mx-auto grid grid-cols-2 gap-4 justify-items-center">
+        <div className="pt-12 max-w-[800px] mx-auto grid grid-cols-2 gap-4 justify-items-center">
           <Input type="text" placeholder="First Name" />
           <Input type="text" placeholder="Last Name" />
           <Input type="email" placeholder="Email" />
