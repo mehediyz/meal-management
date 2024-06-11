@@ -11,6 +11,8 @@ import Home from "../pages/Home/Home";
 import { createBrowserRouter } from "react-router-dom";
 import Signup from "@/pages/Signup/Signup";
 import Login from "@/pages/Login/Login";
+import Blog from "@/pages/Blog/Blog";
+import BlogLayout from "@/layouts/BlogLayout";
 
 export const routes = createBrowserRouter([
   {
@@ -20,6 +22,16 @@ export const routes = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/blog",
+        element: <BlogLayout />,
+        children: [
+          {
+            path: "/blog",
+            element: <Blog />,
+          },
+        ],
       },
     ],
   },
