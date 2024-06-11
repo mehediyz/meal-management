@@ -25,7 +25,7 @@ const Navbar = () => {
               </NavLink>
             ))}
           </div>
-          <Button onClick={() => navigate("/dashboard")}>Login</Button>
+          <Button onClick={() => navigate("/login")}>Login</Button>
         </div>
       </nav>
     </header>
