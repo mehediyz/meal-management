@@ -20,23 +20,27 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const DashboardNavbar = () => {
+  const navigate = useNavigate();
   return (
     <>
       <header className="bg-background border-b">
-        <div className="flex justify-between items-center h-16 px-12">
-          <h1 className="text-xl flex items-center gap-2">
+        <div className="flex justify-between items-center h-16 pl-12 pr-4">
+          <Link
+            to={"/dashboard"}
+            className="text-xl flex items-center gap-2 text-primary font-semibold"
+          >
             <UtensilsCrossed /> Meals
-          </h1>
+          </Link>
           <div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <div className="flex gap-4 items-center cursor-pointer py-2 px-6 hover:bg-primary-50">
                   <Avatar>
-                    <AvatarImage src="https://github.com/shadcn.png" />
-                    <AvatarFallback>CN</AvatarFallback>
+                    <AvatarImage src="https://avatars.githubusercontent.com/u/113818748?v=4" />
+                    <AvatarFallback>MH</AvatarFallback>
                   </Avatar>
                   <div>
                     <h2 className="text-grey-600 font-semibold">
@@ -50,25 +54,22 @@ const DashboardNavbar = () => {
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
-                  <DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => navigate("members/1")}>
                     <User className="mr-2 h-4 w-4" />
-                    <Link to={"/dashboard/profile"}>Profile</Link>
+                    <span>Profile</span>
                     <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <CreditCard className="mr-2 h-4 w-4" />
-                    <span>Billing</span>
-                    <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
                   </DropdownMenuItem>
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
-                  <DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => navigate("members")}>
                     <Users className="mr-2 h-4 w-4" />
                     <span>Members</span>
                   </DropdownMenuItem>
 
-                  <DropdownMenuItem>
+                  <DropdownMenuItem
+                    onClick={() => navigate("members/add-member")}
+                  >
                     <Plus className="mr-2 h-4 w-4" />
                     <span>New Member</span>
                     <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
@@ -82,7 +83,7 @@ const DashboardNavbar = () => {
                 </DropdownMenuItem>
 
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>
+                <DropdownMenuItem onClick={() => navigate("/")}>
                   <LogOut className="mr-2 h-4 w-4" />
                   <span>Log out</span>
                   <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
