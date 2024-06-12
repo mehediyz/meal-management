@@ -14,6 +14,7 @@ import Login from "@/pages/Login/Login";
 import Blog from "@/pages/Blog/Blog";
 import BlogLayout from "@/layouts/BlogLayout";
 import DynamicBlogPage from "@/pages/Blog/DynamicBlogPage";
+import AddMember from "@/components/Members/Add/AddMember";
 
 export const routes = createBrowserRouter([
   {
@@ -77,8 +78,12 @@ export const routes = createBrowserRouter([
         element: <Members />,
       },
       {
-        path: "/dashboard/profile",
+        path: "/dashboard/members/:id",
         element: <Profile />,
+      },
+      {
+        path: "/dashboard/members/add-member",
+        element: <AddMember />,
       },
     ],
   },
