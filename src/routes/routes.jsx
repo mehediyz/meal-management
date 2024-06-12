@@ -1,4 +1,4 @@
-import Profile from "@/pages/Profile/Profile";
+import Profile from "@/pages/Dashboard/Members/Profile/Profile";
 import DashboardLayout from "../layouts/DashboardLayout";
 import HomeLayout from "../layouts/HomeLayout";
 import BazarList from "../pages/Dashboard/BazarList/BazarList";
