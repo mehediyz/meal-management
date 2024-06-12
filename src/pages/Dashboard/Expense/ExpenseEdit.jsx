@@ -14,6 +14,14 @@ import { useState } from "react";
 
 import { Input } from "@/components/ui/input";
 import { Edit } from "lucide-react";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const ExpenseEdit = () => {
   const [date, setDate] = useState();
@@ -54,6 +62,20 @@ const ExpenseEdit = () => {
               Amount
             </Label>
             <Input id="amount" placeholder="2600" className="col-span-3" />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label className="text-right">Status</Label>
+            <Select>
+              <SelectTrigger className="w-[280px]">
+                <SelectValue placeholder="Select status" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectItem value={"Pending"}>Pending</SelectItem>
+                  <SelectItem value={"Paid"}>Paid</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
           </div>
         </div>
 
