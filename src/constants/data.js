@@ -149,3 +149,27 @@ export const members = [
 
   // ...
 ];
+
+// Bazar List
+export const bazarList = [
+  {
+    name: ["Mehedi Hasan", "John Doe"],
+    photo: [
+      "https://avatars.githubusercontent.com/u/113818748?s=400&u=f13b090f244a050abe2fe8850870dea7766c0902&v=4",
+      "https://github.com/shadcn.png",
+    ],
+    date: "16 June, 2024",
+    status: "Completed",
+    amount: 4000,
+  },
+  {
+    name: ["Mehedi Hasan", "Bob"],
+    photo: [
+      "https://avatars.githubusercontent.com/u/113818748?s=400&u=f13b090f244a050abe2fe8850870dea7766c0902&v=4",
+      "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    ],
+    date: "20 June, 2024",
+    status: "Pending",
+    amount: 0,
+  },
+];
