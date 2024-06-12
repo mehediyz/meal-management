@@ -15,6 +15,7 @@ import Blog from "@/pages/Blog/Blog";
 import BlogLayout from "@/layouts/BlogLayout";
 import DynamicBlogPage from "@/pages/Blog/DynamicBlogPage";
 import AddMember from "@/components/Members/Add/AddMember";
+import UpdateProfile from "@/pages/Dashboard/Members/UpdateProfile/UpdateProfile";
 
 export const routes = createBrowserRouter([
   {
@@ -84,6 +85,10 @@ export const routes = createBrowserRouter([
       {
         path: "/dashboard/members/add-member",
         element: <AddMember />,
+      },
+      {
+        path: "/dashboard/members/:id/edit",
+        element: <UpdateProfile />,
       },
     ],
   },
