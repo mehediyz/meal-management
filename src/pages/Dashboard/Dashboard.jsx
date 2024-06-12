@@ -2,6 +2,8 @@ import StatsCard from "@/components/dashboard/StatsCard";
 import Title from "@/components/dashboard/Title";
 import { individualStatsData, overallStatsData } from "@/constants/data";
 import DepositExpenseBarChart from "@/components/Charts/DepositExpenseBarChart";
+import MealsVsMealRateChart from "@/components/Charts/MealsVsMealRateChart";
+import BazarExpenseChart from "@/components/Charts/BazarExpenseChart";
 
 const Dashboard = () => {
   return (
@@ -23,8 +25,12 @@ const Dashboard = () => {
           ))}
         </div>
       </div>
-      <div className="mt-12">
-        <DepositExpenseBarChart />
+      <div className="mt-12 grid grid-cols-2 gap-12">
+        <div className="col-span-2">
+          <DepositExpenseBarChart />
+        </div>
+        <BazarExpenseChart />
+        <MealsVsMealRateChart />
       </div>
     </div>
   );
