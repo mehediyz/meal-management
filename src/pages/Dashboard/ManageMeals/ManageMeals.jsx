@@ -23,7 +23,7 @@ const ManageMeals = () => {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>Members</BreadcrumbPage>
+            <BreadcrumbPage>Manage Meals</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
