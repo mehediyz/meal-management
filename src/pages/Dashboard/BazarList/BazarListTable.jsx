@@ -31,11 +31,17 @@ const BazarListTable = () => {
             <TableCell className="font-medium flex gap-2 items-center">
               <div className="flex">
                 <Avatar>
-                  <AvatarImage src={item.photo[0]} />
+                  <AvatarImage
+                    className="w-full object-cover"
+                    src={item.photo[0]}
+                  />
                   <AvatarFallback>{item.name[0]}</AvatarFallback>
                 </Avatar>
                 <Avatar className="-ml-4">
-                  <AvatarImage src={item.photo[1]} />
+                  <AvatarImage
+                    className="w-full object-cover"
+                    src={item.photo[1]}
+                  />
                   <AvatarFallback>{item.name[1]}</AvatarFallback>
                 </Avatar>
               </div>

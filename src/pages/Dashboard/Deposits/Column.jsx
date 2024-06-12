@@ -32,7 +32,10 @@ export const columns = [
       return (
         <div className="flex items-center gap-4">
           <Avatar>
-            <AvatarImage src={row.original.photo} />
+            <AvatarImage
+              className="w-full object-cover"
+              src={row.original.photo}
+            />
             <AvatarFallback>{row?.getValue("name")[0]}</AvatarFallback>
           </Avatar>
           {row.getValue("name")}

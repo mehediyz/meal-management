@@ -44,7 +44,7 @@ const Profile = () => {
       <div className="max-w-2xl mx-auto mt-4 bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="p-6 bg-grey-50 text-center">
           <img
-            className="w-32 h-32 rounded-full mx-auto mb-4"
+            className="w-32 h-32 rounded-full object-cover mx-auto mb-4"
             src={profile?.photo}
             alt={profile?.name}
           />
