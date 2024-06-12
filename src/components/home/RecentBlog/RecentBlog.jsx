@@ -2,6 +2,7 @@ import { blogData } from "@/constants/blogData";
 import BlogCard from "./BlogCard";
 
 const RecentBlog = () => {
+  const posts = blogData.slice(0, 4);
   return (
     <div className="container mx-auto py-32">
       <div>
@@ -12,8 +13,8 @@ const RecentBlog = () => {
           Explore our recent blogs
         </p>
       </div>
-      <div className="pt-12 grid grid-cols-3 gap-4">
-        {blogData.map((item) => (
+      <div className="pt-12 grid grid-cols-4 gap-4">
+        {posts.map((item) => (
           <BlogCard data={item} />
         ))}
       </div>
