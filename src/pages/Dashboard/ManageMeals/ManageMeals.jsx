@@ -1,15 +1,33 @@
-import ManageMealCalendar from "@/components/ManageMeals/ManageMealCalendar";
-import { ManageMealsTable } from "@/components/ManageMeals/ManageMealsTable";
-import Title from "@/components/dashboard/Title";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { DataTable } from "./DataTable";
+import { columns } from "./Column";
+import { membersMealToday } from "@/constants/data";
+import { Link } from "react-router-dom";
 
 const ManageMeals = () => {
   return (
     <div>
-      <div className="flex items-center justify-between">
-        <Title title={"Manage Meals"} />
-        <ManageMealCalendar />
-      </div>
-      <ManageMealsTable />
+      <Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink>
+              <Link to="/dashboard">Dashboard</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>Members</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+      <DataTable columns={columns} data={membersMealToday} />
     </div>
   );
 };

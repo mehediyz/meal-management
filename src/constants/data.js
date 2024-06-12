@@ -222,3 +222,34 @@ export const expenses = [
 
   // ...
 ];
+
+// Meals today
+export const membersMealToday = [
+  {
+    name: "Mehedi Hasan",
+    photo: "https://github.com/shadcn.png",
+    breakfast: "1",
+    lunch: "1",
+    dinner: "1",
+    updated: "1h ago",
+    phone: "01799703788",
+  },
+  {
+    name: "John Doe",
+    photo: "https://github.com/shadcn.png",
+    breakfast: "1",
+    lunch: "1",
+    dinner: "1",
+    updated: "1h ago",
+    phone: "01799703788",
+  },
+  {
+    name: " Jane",
+    photo: "https://github.com/shadcn.png",
+    breakfast: "1",
+    lunch: "1",
+    dinner: "0",
+    updated: "5m ago",
+    phone: "01799703788",
+  },
+];
