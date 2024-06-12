@@ -195,3 +195,30 @@ export const deposits = [
 
   // ...
 ];
+
+// Expenses
+export const expenses = [
+  {
+    id: "1",
+    name: "Rice",
+    amount: 2600,
+    date: "10 June, 2024",
+    status: "Pending",
+  },
+  {
+    id: "2",
+    name: "Internet",
+    amount: 1200,
+    date: "10 June, 2024",
+    status: "Paid",
+  },
+  {
+    id: "3",
+    name: "Gas",
+    amount: 1200,
+    date: "19 June, 2024",
+    status: "Pending",
+  },
+
+  // ...
+];
