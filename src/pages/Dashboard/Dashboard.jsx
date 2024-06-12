@@ -1,7 +1,7 @@
 import StatsCard from "@/components/dashboard/StatsCard";
-import { MembersMealTable } from "@/components/dashboard/MembersMealTable";
 import Title from "@/components/dashboard/Title";
 import { individualStatsData, overallStatsData } from "@/constants/data";
+import DepositExpenseBarChart from "@/components/Charts/DepositExpenseBarChart";
 
 const Dashboard = () => {
   return (
@@ -23,8 +23,8 @@ const Dashboard = () => {
           ))}
         </div>
       </div>
-      <div className="mt-4">
-        <MembersMealTable />
+      <div className="mt-12">
+        <DepositExpenseBarChart />
       </div>
     </div>
   );

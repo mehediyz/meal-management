@@ -277,7 +277,7 @@ export const deposits = [
     id: "1",
     name: "Mehedi Hasan",
     photo: "https://avatars.githubusercontent.com/u/113818748?v=4",
-    deposit: 5000,
+    deposit: 4000,
     totalMeals: 55,
   },
   {
@@ -285,7 +285,7 @@ export const deposits = [
     name: "Ayesha Siddiqua",
     photo:
       "https://images.pexels.com/photos/5477855/pexels-photo-5477855.jpeg?auto=compress&cs=tinysrgb&w=600",
-    deposit: 2000,
+    deposit: 0,
     totalMeals: 15,
   },
   {
@@ -293,7 +293,7 @@ export const deposits = [
     name: "Rahul Chatterjee",
     photo:
       "https://images.pexels.com/photos/3619947/pexels-photo-3619947.jpeg?auto=compress&cs=tinysrgb&w=600",
-    deposit: 5000,
+    deposit: 3000,
     totalMeals: 50,
   },
   {
@@ -301,7 +301,7 @@ export const deposits = [
     name: "Fatima Begum",
     photo:
       "https://images.pexels.com/photos/4045599/pexels-photo-4045599.jpeg?auto=compress&cs=tinysrgb&w=600",
-    deposit: 1000,
+    deposit: 0,
     totalMeals: 5,
   },
   {
@@ -309,7 +309,7 @@ export const deposits = [
     name: "Shakib Khan",
     photo:
       "https://images.pexels.com/photos/3616501/pexels-photo-3616501.jpeg?auto=compress&cs=tinysrgb&w=600",
-    deposit: 5000,
+    deposit: 1000,
     totalMeals: 55,
   },
   {
@@ -317,7 +317,39 @@ export const deposits = [
     name: "Nusrat Jahan",
     photo:
       "https://images.pexels.com/photos/5852981/pexels-photo-5852981.jpeg?auto=compress&cs=tinysrgb&w=600",
-    deposit: 5000,
+    deposit: 3500,
+    totalMeals: 55,
+  },
+  {
+    id: "7",
+    name: "Tanvir Ahmed",
+    photo:
+      "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+    deposit: 1500,
+    totalMeals: 55,
+  },
+  {
+    id: "8",
+    name: "Mitu Rahman",
+    photo:
+      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
+    deposit: 2000,
+    totalMeals: 55,
+  },
+  {
+    id: "9",
+    name: "Fahim Islam",
+    photo:
+      "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=600",
+    deposit: 800,
+    totalMeals: 55,
+  },
+  {
+    id: "10",
+    name: "Samira Akter",
+    photo:
+      "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=600",
+    deposit: 500,
     totalMeals: 55,
   },
 
