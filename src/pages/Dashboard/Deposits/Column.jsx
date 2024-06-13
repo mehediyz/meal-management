@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useNavigate } from "react-router-dom";
+import AddMoney from "./AddMoney";
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
 
@@ -90,7 +91,9 @@ export const columns = [
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuLabel>Actions</DropdownMenuLabel>
-            <DropdownMenuItem>Add Money</DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <AddMoney />
+            </DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem>Transaction Details</DropdownMenuItem>
           </DropdownMenuContent>
