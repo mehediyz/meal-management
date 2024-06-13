@@ -1,3 +1,4 @@
+import { TestimonialsData } from "@/constants/data";
 import TestimonialCard from "./TestimonialCard";
 
 const Testimonials = () => {
@@ -10,9 +11,9 @@ const Testimonials = () => {
         Opinions of our beloved users
       </p>
       <div className="pt-12 grid grid-cols-3 gap-4">
-        <TestimonialCard />
-        <TestimonialCard />
-        <TestimonialCard />
+        {TestimonialsData.map((item) => (
+          <TestimonialCard key={item.name} data={item} />
+        ))}
       </div>
     </div>
   );

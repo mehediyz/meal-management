@@ -122,6 +122,31 @@ export const getStartedData = [
   },
 ];
 
+// Testimonials
+export const TestimonialsData = [
+  {
+    name: "Mehedi Hasan",
+    photo: "https://avatars.githubusercontent.com/u/113818748?v=4",
+    message:
+      "Valo lage nai vai, faltu ekta jinis. khata e valo. digital I don't like. I love pen and paper, calculation, mistakes etc.",
+    rating: 3,
+  },
+  {
+    name: "Ayesha Siddiqua",
+    photo:
+      "https://images.pexels.com/photos/5477855/pexels-photo-5477855.jpeg?auto=compress&cs=tinysrgb&w=600",
+    message: "Awesome. I fell in love. It's so useful.",
+    rating: 5,
+  },
+  {
+    name: "Shakib Khan",
+    photo:
+      "https://images.pexels.com/photos/3616501/pexels-photo-3616501.jpeg?auto=compress&cs=tinysrgb&w=600",
+    message: "Valo jinis.",
+    rating: 5,
+  },
+];
+
 // Member details
 export const members = [
   {
